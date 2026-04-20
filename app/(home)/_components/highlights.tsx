@@ -1,50 +1,54 @@
-import { highlights, signatureMoments } from "../_data/cafe-data";
+import { qualityStories, storyCards } from "../_data/cafe-data";
 
 export function Highlights() {
   return (
-    <section id="experience" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <section id="story" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl space-y-10">
         <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#d7a86b]">
-              Spatial Experience
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c67c3a]">
+              CHUYEN &quot;NHA&quot;
             </p>
-            <h2 className="mt-4 text-4xl leading-tight font-semibold text-white sm:text-5xl">
-              Không chỉ là uống cafe. Đây là một nhịp trải nghiệm có dàn dựng.
+            <h2 className="mt-4 text-4xl leading-tight font-semibold text-[#2f2118] sm:text-5xl">
+              Mot section ke chuyen thuong hieu truoc khi day nguoi dung vao danh sach san pham.
             </h2>
           </div>
-          <p className="max-w-xl text-base leading-8 text-white/58">
-            Bố cục UI bám theo tinh thần quán thật: mở đầu cuốn hút, giữa trang
-            là phần khám phá có tương tác, cuối trang là social proof và lời mời
-            hành động rõ ràng.
+          <p className="max-w-xl text-base leading-8 text-[#6a5444]">
+            The Coffee House dung rat ro logic nay: dau trang de thuong hieu noi
+            chuyen, giua trang moi dan vao collection va cuoi trang la store,
+            social va news.
           </p>
         </div>
         <div className="grid gap-5 lg:grid-cols-3">
-          {highlights.map((item, index) => (
+          {storyCards.map((item, index) => (
             <article
               key={item.title}
-              className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-6 transition duration-500 hover:-translate-y-1.5 hover:border-[rgba(237,189,123,0.3)] hover:shadow-[0_24px_60px_rgba(0,0,0,0.26)]"
+              className="group relative overflow-hidden rounded-[2rem] border border-[#ecddd0] bg-white p-6 transition duration-500 hover:-translate-y-1.5 hover:border-[#ddb895] hover:shadow-[0_24px_60px_rgba(85,52,24,0.08)]"
             >
-              <div className="absolute inset-x-6 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.45),transparent)]" />
-              <p className="text-sm text-[#d9a86d]">0{index + 1}</p>
-              <h3 className="mt-6 text-2xl font-semibold text-white">{item.title}</h3>
-              <p className="mt-4 text-base leading-7 text-white/58">{item.description}</p>
+              <div className="absolute inset-x-6 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(198,124,58,0.4),transparent)]" />
+              <p className="text-sm text-[#c67c3a]">0{index + 1}</p>
+              <h3 className="mt-6 text-2xl font-semibold text-[#2f2118]">{item.title}</h3>
+              <p className="mt-4 text-base leading-7 text-[#6a5444]">{item.description}</p>
             </article>
           ))}
         </div>
-        <div className="grid gap-5 lg:grid-cols-3">
-          {signatureMoments.map((moment) => (
+        <div className="grid gap-5 lg:grid-cols-2">
+          {qualityStories.map((moment) => (
             <article
-              key={moment.eyebrow}
-              className="rounded-[2rem] border border-white/10 bg-[rgba(17,11,9,0.8)] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
+              key={moment.title}
+              className="overflow-hidden rounded-[2.2rem] border border-[#ecd9c8] bg-[linear-gradient(135deg,#fffaf5,#f9efe4)] p-6 shadow-[0_20px_50px_rgba(96,63,34,0.06)]"
             >
-              <p className="text-xs uppercase tracking-[0.35em] text-white/38">
-                {moment.eyebrow}
+              <div className="mb-5 h-56 rounded-[1.8rem] bg-[linear-gradient(135deg,#efd8be,#d59352)]" />
+              <p className="text-xs uppercase tracking-[0.35em] text-[#a08672]">
+                Story Block
               </p>
-              <h3 className="mt-4 text-2xl leading-tight font-semibold text-[#f7efe4]">
+              <h3 className="mt-4 text-2xl leading-tight font-semibold text-[#2f2118]">
                 {moment.title}
               </h3>
-              <p className="mt-4 text-base leading-7 text-white/55">{moment.copy}</p>
+              <p className="mt-4 text-base leading-7 text-[#6a5444]">{moment.description}</p>
+              <a href="#collection" className="mt-5 inline-flex text-sm font-semibold text-[#c67c3a]">
+                {moment.cta}
+              </a>
             </article>
           ))}
         </div>

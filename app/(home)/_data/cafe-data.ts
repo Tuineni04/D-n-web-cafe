@@ -1,116 +1,117 @@
-export const cafeStats = [
-  { value: "4.9/5", label: "đánh giá từ khách quen" },
-  { value: "07:00 - 23:30", label: "mở cửa mỗi ngày" },
-  { value: "18", label: "signature drinks thủ công" },
+export const heroStats = [
+  { value: "150+", label: "cua hang phuc vu moi ngay" },
+  { value: "45.000d", label: "muc gia mo dau de tiep can" },
+  { value: "4.8/5", label: "danh gia tu khach hang trung thanh" },
 ];
 
-export const highlights = [
+export const storyCards = [
   {
-    title: "Roast Lab mỗi sáng",
+    title: 'Chuyen "Nha"',
     description:
-      "Hạt arabica và blend house được rang theo từng mẻ nhỏ để hương vị luôn tươi, dày và ổn định.",
+      "Mot giao dien ke chuyen thuong hieu, dat cam xuc len truoc khi ban san pham.",
   },
   {
-    title: "Không gian 3 lớp",
+    title: "Menu theo bo suu tap",
     description:
-      "Tầng pha chế mở, lounge ánh vàng và sân hiên cây xanh tạo nhiều nhịp trải nghiệm trong cùng một quán.",
+      "Danh muc ro rang, de luot, de chon va du suc thuyet phuc de bam mua ngay.",
   },
   {
-    title: "Thiết kế cho những cuộc gặp",
+    title: "Tin tuc va cong dong",
     description:
-      "Bàn nhóm, ổ cắm kín đáo, ánh sáng dịu và playlist tiết chế giúp khách ở lại lâu mà không bị mệt.",
-  },
-];
-
-export const signatureMoments = [
-  {
-    eyebrow: "Morning Ritual",
-    title: "Bắt đầu ngày với espresso gọn, sáng và sạch vị.",
-    copy:
-      "Quầy bar hoạt động như một sân khấu nhỏ: shot cà phê kéo liên tục, bánh mới ra lò và ánh nắng chiếu xuyên lớp kính mờ.",
-  },
-  {
-    eyebrow: "Afternoon Lounge",
-    title: "Khoảng nghỉ nhẹ cho làm việc, đọc sách và gặp gỡ.",
-    copy:
-      "Ghế thấp, chất liệu gỗ ấm, hương cacao và nhạc nền nhịp chậm tạo cảm giác tách khỏi nhịp vội bên ngoài.",
-  },
-  {
-    eyebrow: "Night Session",
-    title: "Ánh đèn chuyển tông, menu đậm vị hơn và không khí nhiều tương tác hơn.",
-    copy:
-      "Cold brew, sparkling coffee và các món signature về đêm được đẩy lên như một trải nghiệm xã hội thay vì chỉ là đồ uống.",
+      "Khong chi ban do uong, website con giu nhip song thuong hieu bang noi dung va social proof.",
   },
 ];
 
-export const menuCollections = [
+export const featuredCollections = [
   {
-    id: "espresso",
-    label: "Espresso Bar",
-    note: "gọn vị, sáng mùi, hoàn thiện sắc",
+    id: "coffee",
+    label: "Ca Phe",
+    count: 32,
     description:
-      "Dành cho khách thích cấu trúc vị rõ, hậu ngọt sạch và cảm giác tập trung ngay từ ngụm đầu.",
+      "Nhom thuc uong chu luc, de nhan dien va la diem vao chinh trong luong chuyen doi.",
     items: [
-      { name: "Velvet Espresso", meta: "single origin | cacao | citrus", price: "65K" },
-      { name: "Maple Flat White", meta: "house blend | caramel foam", price: "78K" },
-      { name: "Salted Mocha", meta: "dark chocolate | sea salt cream", price: "89K" },
+      { name: "A-Me Classic", type: "Americano", price: "39.000d" },
+      { name: "A-Me Dao", type: "Ca phe trai cay", price: "49.000d" },
+      { name: "Americano Nong", type: "Mon nong", price: "45.000d" },
     ],
   },
   {
-    id: "slow",
-    label: "Slow Brew",
-    note: "dịu hơn, nhiều tầng mùi và giàu chi tiết",
+    id: "tea",
+    label: "Tra",
+    count: 14,
     description:
-      "Nhịp phục vụ chậm vừa đủ để khách quan sát cách nước, nhiệt và thời gian mở mùi hạt cà phê.",
+      "Nhom menu giup mo rong tap khach, giu giao dien tran day sac thai tuoi va than thien.",
     items: [
-      { name: "Cloud V60", meta: "floral | peach | honey", price: "92K" },
-      { name: "Kyoto Bloom", meta: "cold drip 12h | plum", price: "95K" },
-      { name: "Cedar Chemex", meta: "clean cup | toasted almond", price: "99K" },
+      { name: "Matcha Latte Tay Bac", type: "Latte", price: "45.000d" },
+      { name: "Tra Dao Cam Sa", type: "Tra trai cay", price: "49.000d" },
+      { name: "Hong Tra Sua", type: "Tea milk", price: "55.000d" },
     ],
   },
   {
-    id: "spark",
-    label: "Signature Spark",
-    note: "nhiều chuyển động, thú vị và rất hợp chia sẻ",
+    id: "food",
+    label: "Banh & Mon An",
+    count: 27,
     description:
-      "Các món mang tính trình diễn, layer rõ ràng và được thiết kế để khách muốn chụp, chạm, khám phá.",
+      "Them ly do mua hang bang combo va mon an nhanh, dung voi logic cua mot chuoi lon.",
     items: [
-      { name: "Amber Tonic", meta: "espresso | tonic | orange oil", price: "88K" },
-      { name: "Coco Ember", meta: "coconut cream | espresso fizz", price: "94K" },
-      { name: "Berry Smoke Latte", meta: "berry foam | smoked syrup", price: "96K" },
+      { name: "Butter Croissant", type: "Pastry", price: "29.000d" },
+      { name: "Tiramisu Mini", type: "Dessert", price: "39.000d" },
+      { name: "Banh mi ga xot", type: "Signature food", price: "45.000d" },
     ],
   },
 ];
 
-export const atmosphereCards = [
+export const qualityStories = [
   {
-    title: "Workshop Corner",
-    copy:
-      "Một góc bàn dài để thử hạt mới, mini cupping hoặc private tasting cho nhóm nhỏ.",
+    title: "Nguyen lieu bat dau tu hat ca phe chat luong",
+    description:
+      "Section nay mo rong niem tin thuong hieu bang visual lon, noi dung ngan va CTA ro rang.",
+    cta: "Xem them",
   },
   {
-    title: "Quiet Booth",
-    copy:
-      "Khoang ngồi kín hơn cho khách cần tập trung, họp nhanh hoặc ghi chép dài mà vẫn giữ nhịp quán.",
-  },
-  {
-    title: "Sunset Patio",
-    copy:
-      "Khoảng sân hiên với cây xanh, ánh vàng cuối ngày và luồng gió nhẹ cho những cuộc trò chuyện kéo dài.",
+    title: "Tra duoc tuyen chon de giu chat rieng cho tung mua",
+    description:
+      "Cach dat noi dung gan giong editorial giup website khong bi giong mot landing page ban hang don thuan.",
+    cta: "Tim hieu them",
   },
 ];
 
-export const testimonials = [
+export const storeCities = [
+  "Thanh pho Ho Chi Minh",
+  "Ha Noi",
+  "Hai Phong",
+  "Da Nang",
+  "Nha Trang",
+  "Bien Hoa",
+];
+
+export const instagramTiles = [
+  "Khong gian nha",
+  "Ly ca phe sang",
+  "Khoanh khac nham nhi",
+  "Ban be gap nhau",
+  "Counter dang pha che",
+  "Mon moi trong thang",
+];
+
+export const newsPosts = [
   {
-    quote:
-      "Quán có cảm giác như một studio dành cho cà phê: mọi thứ đều chỉn chu nhưng không hề phô trương.",
-    author: "Linh Tran",
-    role: "Creative Producer",
+    category: "Coffeeholic",
+    date: "01.11.2023",
+    title: "Bat gap Sai Gon xua trong mot menu hien dai cho gioi tre",
+    excerpt:
+      "Dung cach viet tieu de dai, co chat editorial va mo ta ngan de nguoi dung muon bam doc tiep.",
   },
   {
-    quote:
-      "Mỗi góc đều có lý do để ở lại lâu hơn. Đồ uống ngon, nhưng thứ giữ khách lại là bầu không khí.",
-    author: "Huy Nguyen",
-    role: "Founder, local design club",
+    category: "Cap nhat thuong hieu",
+    date: "20.10.2023",
+    title: "Vi sao section tin tuc giup mot website cafe trong co chieu sau hon",
+    excerpt:
+      "No tao cam giac thuong hieu dang song, dang cap nhat, va co nhieu cau chuyen hon la chi co menu.",
   },
 ];
+
+export const footerLinks = {
+  about: ["Ve chung toi", "San pham", "Khuyen mai", "Chuyen ca phe", "Cua hang"],
+  policy: ["Dieu khoan su dung", "Chinh sach bao mat", "Huong dan xuat hoa don"],
+};

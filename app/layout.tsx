@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Web Cafe | Roastery Lounge",
+  title: "Web Cafe | Cafe House Style",
   description:
-    "Landing page quán cafe cao cấp với bố cục khoa học, nhiều điểm chạm tương tác và chuyển động mượt mà.",
+    "Landing page quan cafe voi UX-UI theo huong brand site cua The Coffee House.",
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className="h-full antialiased">
-      <body className="min-h-full flex flex-col bg-[#0f0a08] text-[#f8efe4]">
+      <body className="flex min-h-full flex-col bg-[#fffaf5] text-[#2f2118]">
         {children}
       </body>
     </html>
