@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f0a08;
+  --foreground: #f8efe4;
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  --font-accent: "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-code: "Consolas", "SFMono-Regular", monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-accent);
+  --font-mono: var(--font-code);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-accent), sans-serif;
+  background-image:
+    radial-gradient(circle at top, rgba(239, 199, 137, 0.06), transparent 22%),
+    linear-gradient(180deg, #120c09 0%, #0f0a08 32%, #17100d 100%);
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(240, 199, 143, 0.25);
+  color: #fff3df;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+.floating-card {
+  animation: drift 9s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+
+::view-transition-old(site-header) {
+  display: none;
+}
+
+::view-transition-new(site-header) {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .floating-card {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}
